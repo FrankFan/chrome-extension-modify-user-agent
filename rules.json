@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "operation": "set",
+          "header": "User-Agent",
+          "value": "bitverse_app/1.0.0/android"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*.bitverse.zone"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "operation": "set",
+          "header": "x-u-a",
+          "value": "bitverse_app/1.0.0/android"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*.bitverse.zone"
+    }
+  }
+]
